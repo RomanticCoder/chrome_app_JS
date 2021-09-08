@@ -5,25 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Something</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
+    <script src="clock.js" defer></script>
+    <script src="greeting.js" defer></script>
+    <script src="todoapp.js" defer></script>
+    <script src="background.js" defer></script>
+    <script src="w.js" defer></script>
+    <script src="quote.js" defer></script>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
-    <form class="js-name">
-        <input type="text" placeholder="Tell me your name!">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do">
-    </form>
-    <ul class="js-toDoList"></ul>
-    <div class="js-weather"></div>
+    <main class="main">
+        <div class="main-top">
+            <div class="main-left">
+                <div class="entrance">
+                    <div class="js-clock">
+                        <h1>00:00</h1>
+                    </div>
+                    <form class="js-name">
+                        <input type="text" placeholder="Tell me your name!">
+                    </form>
+                    <h4 class="js-greetings greetings"></h4>
+                </div>
+            </div>
+            <div class="main-right">
+    
+                <div class="todoapp">
+                    <input
+                      id="new-todo-title"
+                      class="new-todo"
+                      placeholder="Enter a new task "
+                      autofocus
+                    />
+                    <main>
+                      <input class="toggle-all" type="checkbox" />
+                      <ul id="todo-list" class="todo-list">
+                      </ul>
+                      <div class="count-container">
+                        <span class="todo-count">Total <strong>0</strong></span>
+                        <ul class="filters">
+                          <li>
+                            <a class="all selected" href="#">View All</a>
+                          </li>
+                          <li>
+                            <a class="active" href="#active">Active</a>
+                          </li>
+                          <li>
+                            <a class="completed" href="#completed">Completed</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </main>
+                  </div>
+            </div>
+        </div>
 
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="background.js"></script>
-    <script src="w.js"></script>
+        <div class="main-bottom">
+            <p class="js-quote">
+                hi here !!! 
+            </p>
+        </div>
+
+        <div class="js-weather">
+        </div>
+        
+    </main>
 </body>
 </html>

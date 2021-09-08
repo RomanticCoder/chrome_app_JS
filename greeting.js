@@ -26,7 +26,7 @@ function saveName(text){
 function paintGreeting(text){
     nameForm.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerText = `Hello, ${text}.`;
 }
 
 function init(){
