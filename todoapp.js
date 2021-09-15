@@ -78,12 +78,9 @@ function handleTodoClick(event){
         deleteElement(target)
     }
     if(target.type == 'checkbox'){
-
         const li = (target.parentNode.parentNode);
         li.classList.toggle("completed");
-
-        console.log(li.classList.contains("completed"));
-
+        console.log(li);
         todoList.forEach((element)=>{
             if(element.id == li.id){    
                 if(element.state == 'active'){
